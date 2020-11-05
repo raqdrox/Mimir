@@ -7,4 +7,4 @@ Just a Side Project to Replicate "Steins Gate 0" Phone UI in Unity .
 4. This repo is just to fill my empty Github profile.
 5. Check out Steins Gate (Anime And Visual Novel) if you haven't.
 
-#EL PSY KONGROO
+# EL PSY KONGROO
