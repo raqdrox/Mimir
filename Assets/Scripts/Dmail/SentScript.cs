@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 public class SentScript : MonoBehaviour
 {
@@ -29,9 +27,22 @@ public class SentScript : MonoBehaviour
         }
     }
 
+    private char DigToChar(int a) => a == 0 ? '0' : (char)(a + 48);
+
+    private string GetSendTime()
+    {
+        char[] TempTime = System.DateTime.UtcNow.ToString("HH:mm dd MMMM, yyyy").ToCharArray();
+        int TimeMins = ((((int)(TempTime[0] - '0')) * 10 + (int)(TempTime[1] - '0')) * 60) + (((int)(TempTime[3] - '0') * 10) + (int)(TempTime[4] - '0'));
+        TimeMins -= 5;
+        TempTime[0] = DigToChar(TimeMins / 60 / 10);
+        TempTime[1] = DigToChar(TimeMins / 60 % 10);
+        TempTime[3] = DigToChar(TimeMins % 60 / 10);
+        TempTime[4] = DigToChar(TimeMins % 60 % 10);
+        return new string(TempTime);
+    }
     public void SceneSwitcher() // Additional steps for D-MAIL
     {
-        TimeText.text=System.DateTime.UtcNow.ToString("HH:mm dd MMMM, yyyy");
+        TimeText.text = GetSendTime();
         SentMessage.GetComponentInChildren<Text>().text = MsgText;
         scene1.SetActive(false);
         scene2.SetActive(true);
