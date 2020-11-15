@@ -8,10 +8,11 @@ public class SentScript : MonoBehaviour
     public GameObject SentMessage;
     public GameObject scene1, scene2;
     public Text TimeText;
+    public GameObject Sending;
 
     public void SwitchInit(string MsgInput)
     {
-        if (MailType == 0) // Used incase of D-MAIL
+        if (MailType == 0) // Used in case of D-MAIL
         {
             MsgText = MsgInput;
             MsgSize = ((int)MsgInput.Length / 12)+1;
@@ -20,9 +21,10 @@ public class SentScript : MonoBehaviour
             SceneSwitcher();
             
         }
-        else // Used incase of D-RINE
+        else // Used in case of D-RINE
         {
             SentMessage.GetComponentInChildren<Text>().text = MsgInput;
+            Sending.SetActive(false);
             SentMessage.SetActive(true);
         }
     }

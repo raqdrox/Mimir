@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class DmailInitiate : MonoBehaviour
 {
     public InputField TextInput;
@@ -13,6 +14,7 @@ public class DmailInitiate : MonoBehaviour
     public DmailBackend DmBackObj;
     public SentScript SentObj;
     public AudioSource Notif;
+
     public void Initiate()
     {
         MsgInput = TextInput.text;
@@ -26,12 +28,9 @@ public class DmailInitiate : MonoBehaviour
         btn.interactable = false;
         ReadingSteinerSound.Play();
         Notif.Play();
-        anim.SetActive(true);
         anim.GetComponent<Animator>().SetTrigger("StartDmail");
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         SentObj.SwitchInit(MsgInput);
-        yield return new WaitForSeconds(7);
-        anim.SetActive(false);
     }
 
 }
