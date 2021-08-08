@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MailApp.unity
     guid: c4ceee35c99704d4ab94354138480526
+  - enabled: 1
+    path: Assets/Scenes/SettingMenu.unity
+    guid: c8b42e3eff65c384596e8b1e62d3984d
   m_configObjects: {}

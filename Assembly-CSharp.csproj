@@ -60,21 +60,24 @@
     <Compile Include="Assets\Scripts\ScrollingText.cs" />
     <Compile Include="Assets\Scripts\Phone\BatteryLevel.cs" />
     <Compile Include="Assets\Scripts\trans\Initiate.cs" />
+    <Compile Include="Assets\Scripts\Scaler.cs" />
+    <Compile Include="Assets\Scripts\ScreenSize.cs" />
     <Compile Include="Assets\Scripts\trans\TransitionScene.cs" />
     <Compile Include="Assets\Scripts\Dmail\SentScript.cs" />
+    <Compile Include="Assets\Scripts\Phone\ThemeScript.cs" />
     <Compile Include="Assets\Scripts\Phone\StateChanger.cs" />
     <Compile Include="Assets\Scripts\Phone\SignalLevel.cs" />
     <Compile Include="Assets\scr.cs" />
     <Compile Include="Assets\Scripts\Menu\Exit.cs" />
     <Compile Include="Assets\Scripts\Dmail\DmailInitiate.cs" />
+    <Compile Include="Assets\Scripts\Phone\Settings.cs" />
     <Compile Include="Assets\Scripts\Menu\LevelLoader.cs" />
-    <Compile Include="Assets\Scripts\ScreenSize.cs" />
-    <Compile Include="Assets\Scripts\Scaler.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\ThemeData\theme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

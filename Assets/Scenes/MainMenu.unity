@@ -331,7 +331,7 @@ PrefabInstance:
     - target: {fileID: 1116357845266384121, guid: 83ba08ed946c5484ea392b97ebe89ae2,
         type: 3}
       propertyPath: TransSpeed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1243768347489214043, guid: 83ba08ed946c5484ea392b97ebe89ae2,
         type: 3}
