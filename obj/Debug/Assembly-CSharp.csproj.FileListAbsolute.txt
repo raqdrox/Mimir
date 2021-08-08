@@ -1,2 +1,0 @@
-D:\Repositories\GitHub\Operation-Mimir\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-D:\Repositories\GitHub\Operation-Mimir\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
