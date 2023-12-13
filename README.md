@@ -1,5 +1,5 @@
 # Operation-Mimir
-Just a Side Project to Replicate "Steins Gate 0" Phone UI in Unity .
+Replicating "Steins Gate 0" Phone UI in Unity .
 ### Note : 
 1. UI is for Smartphones. *Since Dev Build 9 (Optimised) ,Only supports 9:19 Aspect Ratio.*
 2. This code is bad but it does the job.
